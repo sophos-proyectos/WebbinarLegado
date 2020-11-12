@@ -19,7 +19,7 @@ public class SendEmail implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        GetAutoIT.getInstance().send(email.getDestinatario());
+        GetAutoIT.getInstance().send(email.getTo());
         WaitMilisecond.sleppMiliseconds(100);
         GetAutoIT.getInstance().send(Constants.KEY_TAB, Boolean.FALSE);
         WaitMilisecond.sleppMiliseconds(100);
@@ -29,11 +29,11 @@ public class SendEmail implements Task {
         WaitMilisecond.sleppMiliseconds(100);
         GetAutoIT.getInstance().send(Constants.KEY_TAB, Boolean.FALSE);
         WaitMilisecond.sleppMiliseconds(100);
-        GetAutoIT.getInstance().send(email.getAsunto());
+        GetAutoIT.getInstance().send(email.getSubject());
         WaitMilisecond.sleppMiliseconds(100);
         GetAutoIT.getInstance().send(Constants.KEY_TAB, Boolean.FALSE);
         WaitMilisecond.sleppMiliseconds(100);
-        GetAutoIT.getInstance().send(email.getContenido());
+        GetAutoIT.getInstance().send(email.getContent());
         WaitMilisecond.sleppMiliseconds(100);
         GetAutoIT.getInstance().controlClick("", "", Constants.BUTTON_SEND_EMAIL);
         TakeScreenShot.takeScreenShot();

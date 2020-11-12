@@ -1,7 +1,6 @@
 package com.sophossolutions.questions;
 
 import com.sophossolutions.utilities.Constants;
-import com.sophossolutions.utilities.TakeScreenShot;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 

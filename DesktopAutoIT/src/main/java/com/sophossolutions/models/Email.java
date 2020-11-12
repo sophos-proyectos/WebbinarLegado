@@ -2,37 +2,27 @@ package com.sophossolutions.models;
 
 public class Email {
 
-    private String destinatario;
-    private String asunto;
-    private String contenido;
+    private String to;
+    private String subject;
+    private String content;
 
-    public Email(String destinatario, String asunto, String contenido) {
-        this.destinatario = destinatario;
-        this.asunto = asunto;
-        this.contenido = contenido;
+    public Email(String to, String subject, String content) {
+        this.to = to;
+        this.subject = subject;
+        this.content = content;
     }
 
-    public String getDestinatario() {
-        return destinatario;
+    public String getTo() {
+        return to;
     }
 
-    public void setDestinatario(String destinatario) {
-        this.destinatario = destinatario;
+    public String getSubject() {
+        return subject;
     }
 
-    public String getAsunto() {
-        return asunto;
+    public String getContent() {
+        return content;
     }
 
-    public void setAsunto(String asunto) {
-        this.asunto = asunto;
-    }
-
-    public String getContenido() {
-        return contenido;
-    }
-
-    public void setContenido(String contenido) {
-        this.contenido = contenido;
-    }
+    
 }
